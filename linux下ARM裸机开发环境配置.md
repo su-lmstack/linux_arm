@@ -5,19 +5,20 @@
     ARM裸机开发，需要在PC端编译代码，然后在arm嵌入式设备中执行，因此需要制作交叉编译工具链。。
       
 1. **利用crosstool-ng制作交叉编译工具连**
-    1. [http://crosstool-ng.org/download/crosstool-ng/] 下载 *crosstool-ng-1.24.0.tar.xz* 
-  2. 解压该文件，并进入该文件路径。
-      *cd crosstool-ng-1.24.0*
-   3. 对该软件进行编译
-        *./configure --prefix=PATH*
-        *make*
-        *make install*
-        其中PATH为crosstool的安装路径
-   4.   如果configure时提示一些前置安装包不存在的话，需要安装这些包。
-        *apt-get install gperf bison flex texinfo help2man gawk automake libncurses5-dev make libtool libtool-bin*
-   5.   安装完成后添加环境变量
-        *vim ~/.bashrc*
-        *在文件尾部加入一行 PATH=$PATH:/home/tools/cross/bin*
-        *执行source ~/.bashrc 
-        *执行echo $PATH，如果看到添加的路径，则说明成功*
+    1. [http://crosstool-ng.org/download/crosstool-ng/] 
+        下载 *crosstool-ng-1.24.0.tar.xz* 
+    2. 解压该文件，并进入该文件路径。
+       *cd crosstool-ng-1.24.0*
+    3. 对该软件进行编译
+       *./configure --prefix=PATH*
+       *make*
+       *make install*
+       其中PATH为crosstool的安装路径
+    4. 如果configure时提示一些前置安装包不存在的话，需要安装这些包。
+       *apt-get install gperf bison flex texinfo help2man gawk automake libncurses5-dev make libtool libtool-bin*
+    5. 安装完成后添加环境变量
+       *vim ~/.bashrc*
+       *在文件尾部加入一行 PATH=$PATH:/home/tools/cross/bin*
+       *执行source ~/.bashrc 
+       *执行echo $PATH，如果看到添加的路径，则说明成功*
       
