@@ -5,10 +5,10 @@
     ARM裸机开发，需要在PC端编译代码，然后在arm嵌入式设备中执行，因此需要制作交叉编译工具链。。
       
 1. **利用crosstool-ng制作交叉编译工具连**
-   1.   [http://crosstool-ng.org/download/crosstool-ng/] 下载 *crosstool-ng-1.24.0.tar.xz* 
-   2.   解压该文件，并进入该文件路径。
-        *cd crosstool-ng-1.24.0*
-   3.   对该软件进行编译
+  1. [http://crosstool-ng.org/download/crosstool-ng/] 下载 *crosstool-ng-1.24.0.tar.xz* 
+  2. 解压该文件，并进入该文件路径。
+      *cd crosstool-ng-1.24.0*
+   3. 对该软件进行编译
         *./configure --prefix=PATH*
         *make*
         *make install*
