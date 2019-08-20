@@ -2,10 +2,11 @@
   
 ## Linux系统下进行ARM裸机开发，主要需要以下的工具
 - **交叉编译工具链**\
-    ARM裸机开发，需要在PC端编译代码，然后在arm嵌入式设备中执行，因此需要制作交叉编译工具链。。
+    ARM裸机开发，需要在PC端编译代码，然后在arm嵌入式设备中执行，因此需要制作交叉编译工具链。
       
-1. **利用crosstool-ng制作交叉编译工具连**
-    1. 从网址[http://crosstool-ng.org/download/crosstool-ng/]\ 
+### 利用crosstool-ng制作交叉编译工具连
+1. **下载与安装**
+    1. 从网址[http://crosstool-ng.org/download/crosstool-ng/] \ 
         下载 `crosstool-ng-1.24.0.tar.xz` 
     2. 解压该文件，并进入该文件路径。\
        `cd crosstool-ng-1.24.0`
@@ -21,4 +22,8 @@
        `在文件尾部加入一行 PATH=$PATH:/home/tools/cross/bin`
        `执行source ~/.bashrc`
        `执行echo $PATH，如果看到添加的路径，则说明成功`
-      
+ 2. **制作**
+     1. 使用`ct-ng help`查看是否安装成功。 
+     2. 使用`ct-ng list-samples`查看默认配置列表。  
+     3. 使用`ct-ng arm-unknown-linux-gnueabi`配置该编译器。  
+     4. 使用`ct-ng menuconfig`开始配置。。
